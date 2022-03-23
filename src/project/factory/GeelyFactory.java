@@ -10,7 +10,7 @@ public class GeelyFactory extends Factory{
     @Override
     public Car createCar(int year, CarEngine carEngine, CarWheelSize carWheelSize, CarColors carColors) {
         createSchemeCar(year,carEngine,carWheelSize,carColors);
-        GeelyCar car = new GeelyCar(year, carEngine, carColors, carWheelSize);
+        GeelyCar car = new GeelyCar(getCheckedYear(), getCheckedValue(), getCheckedColor(), getCheckedWheels());
         return car;
     }
 }

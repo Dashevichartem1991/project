@@ -11,8 +11,8 @@ public class FordFactory extends  Factory {
 
     @Override
     public Car createCar(int year, CarEngine carEngine, CarWheelSize carWheelSize, CarColors carColors) {
-        createSchemeCar(getCheckedYear(),getCheckedValue(),getCheckedWheels(), getCheckedColor());
-        FordCar car = new FordCar(year, carEngine, carColors, carWheelSize);
+        createSchemeCar(year,carEngine,carWheelSize, carColors);
+        FordCar car = new FordCar(getCheckedYear(), getCheckedValue(), getCheckedColor(), getCheckedWheels());
         return car;
     }
 
